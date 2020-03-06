@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "newRssApp": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "newRssApp"
+    }
+  },
+  "defaultProject": "newRssApp",
+  "cli": {
+    "analytics": "320adedf-81ba-4c83-b43e-5356e381e89f"
+  }
 }

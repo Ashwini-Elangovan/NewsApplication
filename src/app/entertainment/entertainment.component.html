@@ -1,0 +1,14 @@
+<div class="container-fluid my-3">
+    <h4 class="underline d-inline my-2">Entertainment</h4>
+    <div class="card-columns mt-5">
+        <a *ngFor="let entertainmentNew of entertainmentNews" (click)="selectedNews(entertainmentNew)">
+            <div class="card">
+                <img src="{{entertainmentNew.urlToImage}}" class="card-img-top" alt="{{entertainmentNew.title}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{entertainmentNew.title}}</h5>
+                    <p class="card-text">{{entertainmentNew.description}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

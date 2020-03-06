@@ -1,0 +1,121 @@
+<div class="container-fluid my-3">
+
+    <!-- General News starts-->
+    <h4 class="underline d-inline my-2" routerLink="/news/general">General</h4>
+    <div class="row">
+        <a class="col-lg-3 align-self-stretch" *ngFor="let generalNew of generalNews; index as i"
+            (click)="selectedNews(generalNew)">
+            <ng-container *ngIf="i <=3">
+                <div class="card mt-5 border border-0">
+                    <img src="{{generalNew.urlToImage}}" class="card-img-top" alt="{{generalNew.title}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{generalNew.title}}</h5>
+                    </div>
+                </div>
+            </ng-container>
+        </a>
+    </div>
+    <!-- General News ends-->
+
+    <!-- Health News starts-->
+    <h4 class="underline d-inline my-2" routerLink="/news/health">Health</h4>
+    <div class="row">
+        <a class="col-lg-3 align-self-stretch" *ngFor="let healthNew of healthNews; index as i"
+            (click)="selectedNews(healthNew)">
+            <ng-container *ngIf="i <=3">
+                <div class="card mt-5 border border-0">
+                    <img src="{{healthNew.urlToImage}}" class="card-img-top" alt="{{healthNew.title}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{healthNew.title}}</h5>
+                    </div>
+                </div>
+            </ng-container>
+        </a>
+    </div>
+    <!-- Health News ends-->
+
+    <!-- Entertainment News starts-->
+    <h4 class="underline d-inline my-2" routerLink="/news/entertainment">Entertainment</h4>
+    <div class="row">
+        <a class="col-lg-3 align-self-stretch" *ngFor="let entertainmentNew of entertainmentNews; index as i"
+            (click)="selectedNews(entertainmentNew)">
+            <ng-container *ngIf="i <=3">
+                <div class="card mt-5 border border-0">
+                    <img src="{{entertainmentNew.urlToImage}}" class="card-img-top" alt="{{entertainmentNew.title}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{entertainmentNew.title}}</h5>
+                    </div>
+                </div>
+            </ng-container>
+        </a>
+    </div>
+    <!-- Entertainment News ends-->
+
+    <!-- Business News starts-->
+    <h4 class="underline d-inline my-2" routerLink="/news/business">Business</h4>
+    <div class="row">
+        <a class="col-lg-3 align-self-stretch" *ngFor="let businessNew of businessNews; index as i"
+            (click)="selectedNews(businessNew)">
+            <ng-container *ngIf="i <=3">
+                <div class="card mt-5 border border-0">
+                    <img src="{{businessNew.urlToImage}}" class="card-img-top" alt="{{businessNew.title}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{businessNew.title}}</h5>
+                    </div>
+                </div>
+            </ng-container>
+        </a>
+    </div>
+    <!-- Business News ends-->
+
+    <!-- Science News starts-->
+    <h4 class="underline d-inline my-2" routerLink="/news/science">Science</h4>
+    <div class="row">
+        <a class="col-lg-3 align-self-stretch" *ngFor="let scienceNew of scienceNews; index as i"
+            (click)="selectedNews(scienceNew)">
+            <ng-container *ngIf="i <=3">
+                <div class="card mt-5 border border-0">
+                    <img src="{{scienceNew.urlToImage}}" class="card-img-top" alt="{{scienceNew.title}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{scienceNew.title}}</h5>
+                    </div>
+                </div>
+            </ng-container>
+        </a>
+    </div>
+    <!-- Science News ends-->
+
+    <!-- Sports News starts-->
+    <h4 class="underline d-inline my-2" routerLink="/news/sports">Sports</h4>
+    <div class="row">
+        <a class="col-lg-3 align-self-stretch" *ngFor="let sportsNew of sportsNews; index as i"
+            (click)="selectedNews(sportsNew)">
+            <ng-container *ngIf="i <=3">
+                <div class="card mt-5 border border-0">
+                    <img src="{{sportsNew.urlToImage}}" class="card-img-top" alt="{{sportsNew.title}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{sportsNew.title}}</h5>
+                    </div>
+                </div>
+            </ng-container>
+        </a>
+    </div>
+    <!-- Sports News ends-->
+
+    <!-- technology news starts-->
+    <h4 class="underline d-inline my-2" routerLink="/news/technology">Technology</h4>
+    <div class="row">
+        <a class="col-lg-3 align-self-stretch" *ngFor="let technologyNew of technologyNews; index as i"
+            (click)="selectedNews(technologyNew)">
+            <ng-container *ngIf="i <=3">
+                <div class="card mt-5 border border-0">
+                    <img src="{{technologyNew.urlToImage}}" class="card-img-top" alt="{{technologyNew.title}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{technologyNew.title}}</h5>
+                    </div>
+                </div>
+            </ng-container>
+        </a>
+    </div>
+    <!-- technology news ends-->
+</div>

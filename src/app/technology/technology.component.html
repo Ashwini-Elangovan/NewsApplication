@@ -1,0 +1,14 @@
+<div class="container-fluid my-3">
+    <h4 class="underline d-inline my-2">Technology</h4>
+    <div class="card-columns mt-5">
+        <a *ngFor="let technew of technews" (click)="selectedNews(technew)">
+            <div class="card">
+                <img src="{{technew.urlToImage}}" class="card-img-top" alt="{{technew.title}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{technew.title}}</h5>
+                    <p class="card-text">{{technew.description}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

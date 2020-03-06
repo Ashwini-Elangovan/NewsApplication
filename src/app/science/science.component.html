@@ -1,0 +1,15 @@
+
+<div class="container-fluid my-3">
+    <h4 class="underline d-inline my-2">Science</h4>
+    <div class="card-columns mt-5">
+        <a *ngFor = "let scienceNew of scienceNews" (click)="selectedNews(scienceNew)">
+            <div class="card">
+                <img src="{{scienceNew.urlToImage}}" class="card-img-top" alt="{{scienceNew.title}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{scienceNew.title}}</h5>
+                    <p class="card-text">{{scienceNew.description}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
