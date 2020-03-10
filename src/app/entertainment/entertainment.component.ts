@@ -16,7 +16,7 @@ export class EntertainmentComponent implements OnInit {
     //Subscribing data from NewsService
     this.news.entertainmentNews().subscribe( data =>{
       this.entertainmentNews = JSON.parse(JSON.stringify(data)).articles ;
-    })
+    });
   }
   //Selected News to display in Single Page
   selectedNews(news){
